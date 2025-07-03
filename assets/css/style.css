@@ -1,0 +1,125 @@
+body {
+  background-color: #fff0f6;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+  color: #d63384;
+  font-weight: 600;
+}
+
+a {
+  color: #d63384;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn-pink {
+  background-color: #d63384;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-pink:hover {
+  background-color: #c2185b;
+}
+
+.card {
+  border: 1px solid #ffe0ec;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(214, 51, 132, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.navbar {
+  background-color: #ffe3f1;
+}
+
+.navbar-brand {
+  color: #d63384;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: #d63384;
+}
+
+.navbar-nav .nav-link:hover,
+.nav-link.active {
+  color: #c2185b;
+}
+
+label {
+  font-weight: 500;
+  color: #d63384;
+}
+
+/* Placeholder pudar */
+::placeholder {
+  color: #d1d1d1;
+  opacity: 1;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: #ca729e;
+}
+
+/* === EFEK LOADING SPINNER === */
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff0f6;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  border: 6px solid #ffd6e7;
+  border-top: 6px solid #d63384;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* === TOMBOL FLOATING "KE ATAS" === */
+#toTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #d63384;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+#toTopBtn:hover {
+  background-color: #c2185b;
+}
